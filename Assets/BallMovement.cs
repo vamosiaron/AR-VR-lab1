@@ -40,7 +40,7 @@ public class BallMovement : MonoBehaviour
                 Vector3 thumbLeap = thumbFinger.TipPosition;
 
 
-                Vector3 direction = indexLeap - transform.position;
+                Vector3 direction = indexLeap * 2 - transform.position;
                 Vector3 direction_normalized = direction.normalized * moveForce;
 
                 Vector3 force = new Vector3(direction_normalized.x, 0, direction_normalized.z);
